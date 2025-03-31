@@ -1,88 +1,79 @@
-/* Estilos gerais */
+/* Configuração Básica */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
+  background-color: #181818;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
-/* Cabeçalho e navegação */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+/* Conteúdo Principal */
+.conteudo-principal {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+/* Título Principal */
+.titulo-principal {
+  font-size: 28px;
+  color: #d4af37; /* Ouro para destacar */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-nav ul li {
-    margin: 0 1rem;
+/* Botões */
+.botoes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.botao {
+  background-color: #444444;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(212, 175, 55, 0.8);
 }
 
-/* Seções */
-section {
-    padding: 2rem 1rem;
-    text-align: center;
+.botao.ativo {
+  background-color: #d4af37;
+  color: #181818;
+  font-weight: bold;
 }
 
-section:nth-child(even) {
-    background: #f4f4f4;
+/* Abas de Texto */
+.abas-textos {
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
-    margin-bottom: 1rem;
+.aba-conteudo {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Lista de serviços */
-ul {
-    list-style: none;
-    padding: 0;
+.aba-conteudo-titulo-principal {
+  font-size: 22px;
+  color: #d4af37;
 }
 
-ul li {
-    margin: 0.5rem 0;
-}
-
-/* Depoimentos */
-blockquote {
-    margin: 1rem auto;
-    font-style: italic;
-    max-width: 600px;
-    color: #555;
-}
-
-/* Rodapé */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* Design responsivo */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    blockquote {
-        margin: 1rem;
-    }
+.aba-conteudo-titulo-secundario {
+  font-size: 18px;
+  color: #bbbbbb;
 }
